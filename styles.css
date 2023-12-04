@@ -1,6 +1,14 @@
+body {
+    font-family: 'Fira Sans';
+}
+
 .header {
     background-color: rgb(238, 238, 238);
-    height: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
     display: flex;
     justify-content: space-between;
 }
@@ -11,20 +19,26 @@
 
 .header__nav {
     margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
-.header__nav__links li {
+.header__list {
     color: rgb(153, 153, 153);
     list-style-type: none;
+}
+
+.header__item {
     display: inline;
     margin: 1rem;
 }
 
-.header__nav__links--current {
-    color: rgb(34, 34, 34);
+.header__item--current{
+    font-weight: bold;
+    color: rgb(53, 53, 53);
 }
 
-.header__button {
+.header__btn {
     margin-right: 1rem;
     margin-top: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -37,17 +51,22 @@
     display: none;
 }
 
-.wrapper-main__banner {
+.header__banner {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    background-color: rgb(238, 238, 238)
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
 }
 
-.wrapper-main__banner h1 {
+.header__title {
     font-size: 3rem;
     margin-bottom: 0;
+}
+
+.wrapper-main__banner p {
+    color: rgb(75, 75, 75);
 }
 
 .banner__store-links {
@@ -95,7 +114,15 @@
     column-gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    margin: 15rem 8rem 8rem 8rem;
+    margin: 10rem 8rem 8rem 8rem;
+}
+
+.card__wrapper__header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-self: center;
+    font-size: 3rem;
+    margin: 0;
 }
 
 .card__wrapper-cards {
@@ -107,8 +134,9 @@
     height: 25vh;
 }
 
+
 .card__wrapper-cards--bottom--left {
-    grid-area: 2 / 1 / 2 / 3;
+    grid-area: 3 / 1 / 3 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +148,7 @@
 }
 
 .card__wrapper-cards--bottom--right {
-    grid-area: 2 / 3 / 2 / 5;
+    grid-area: 3 / 3 / 3 / 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,27 +161,29 @@
 
 footer {
     background-image: url(images/footer-background.png);
-    height: auto;
 }
 
 
 
 @media only screen and (max-width: 800px) {
-    body {
-      background-color: lightblue;
-    }
 
     .header__nav {
         display: none;
     }
 
-    .header__button {
+    .header__btn {
         display: none;
     }
 
     .header__nav--small {
         display: block;
         margin: 1.5rem;
+    }
+
+    .card__wrapper__header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
     }
 
     .card__wrapper {
@@ -165,12 +195,12 @@ footer {
     }
 
     .card__wrapper-cards--bottom--left {
-        grid-area: 3 / 1 / 3 / 3;
+        grid-area: 4 / 1 / 4 / 3;
         
     }
     
     .card__wrapper-cards--bottom--right {
-        grid-area: 4 / 1 / 4 / 3;
+        grid-area: 5 / 1 / 5 / 3;
     }
 
   }
