@@ -158,6 +158,13 @@ body {
     height: 20vh;
 }
 
+.testy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 footer {
     background-image: url(images/footer-background.png);
