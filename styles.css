@@ -65,11 +65,11 @@ body {
     margin-bottom: 0;
 }
 
-.wrapper-main__banner p {
+.header__paragraph {
     color: rgb(75, 75, 75);
 }
 
-.banner__store-links {
+.header__store-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.banner__store-links--apple {
+.header__store-links--apple {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,11 +89,11 @@ body {
     border-radius: 5px;
 }
 
-.banner__store-links--apple img {
+.header__store-image {
     padding-right: 0.5rem;
 }
 
-.banner__store-links--google {
+.header__store-links--google {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,11 +104,7 @@ body {
     border-radius: 5px;
 }
 
-.banner__store-links--google img {
-    padding-right: 0.5rem;
-}
-
-.card__wrapper {
+.card-wrapper {
     display: grid;
     row-gap: 3rem;
     column-gap: 1.5rem;
@@ -117,7 +113,7 @@ body {
     margin: 10rem 8rem 8rem 8rem;
 }
 
-.card__wrapper__header {
+.card-wrapper__header {
     grid-column-start: 1;
     grid-column-end: 5;
     justify-self: center;
@@ -125,7 +121,7 @@ body {
     margin: 0;
 }
 
-.card__wrapper-cards {
+.card-wrapper__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +131,7 @@ body {
 }
 
 
-.card__wrapper-cards--bottom--left {
+.card-wrapper__card-bottom--left {
     grid-area: 3 / 1 / 3 / 3;
     display: flex;
     flex-direction: column;
@@ -147,7 +143,7 @@ body {
     
 }
 
-.card__wrapper-cards--bottom--right {
+.card-wrapper__card-bottom--right {
     grid-area: 3 / 3 / 3 / 5;
     display: flex;
     flex-direction: column;
@@ -163,6 +159,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -187,13 +184,13 @@ footer {
         margin: 1.5rem;
     }
 
-    .card__wrapper__header {
+    .card-wrapper__header {
         grid-column-start: 1;
         grid-column-end: 3;
         justify-self: center;
     }
 
-    .card__wrapper {
+    .card-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -201,12 +198,12 @@ footer {
         margin: 3rem 1rem 7rem 1rem;
     }
 
-    .card__wrapper-cards--bottom--left {
+    .card-wrapper__card-bottom--left {
         grid-area: 4 / 1 / 4 / 3;
         
     }
     
-    .card__wrapper-cards--bottom--right {
+    .card-wrapper__card-bottom--right {
         grid-area: 5 / 1 / 5 / 3;
     }
 
