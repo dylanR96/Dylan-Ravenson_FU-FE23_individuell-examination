@@ -79,6 +79,8 @@
     margin-bottom: 0;
 }
 
+/* Animation */
+
 .header__animation-wrapper {
     position: relative;
     animation-name: dropping-by;
@@ -90,6 +92,8 @@
     0%   {left: 0px; top: -1000px;}
     100% {left:0px; top:0px;}
   }
+
+/* Animation */
 
 .header__paragraph {
     color: rgb(75, 75, 75);
@@ -140,6 +144,8 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* Animation */
+
 .card-wrapper__animation-container {
     position: relative;
     animation-name: stopping-by;
@@ -155,6 +161,10 @@
     0%   {left:-2000px; top:0px;}
     100% {left:0px; top:0px;}
   }
+
+
+/* Animation */
+
 
 .card-wrapper__header {
     font-size: 3rem;
@@ -307,6 +317,8 @@
         margin: 1.5rem;
     }
 
+    /* Animation */
+
     .header__animation-wrapper {
         position: relative;
         animation-name: dropping-by;
@@ -333,6 +345,8 @@
         0%   {left:-500px; top:0px;}
         100% {left:0px; top:0px;}
       }
+
+    /* Animation */
 
     .card-wrapper {
         display: grid;
