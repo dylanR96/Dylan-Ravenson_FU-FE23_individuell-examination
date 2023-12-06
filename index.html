@@ -8,7 +8,10 @@
     <title>Assignment</title>
 </head>
 
-<body>
+<body class="page">
+
+    <!--           Header           -->
+
     <header class="header">
         
         <section class="header__top">
@@ -34,7 +37,7 @@
         </section>
             
             <section class="header__banner">
-                <div class="testytest">
+                <div class="header__animation-wrapper">
                 <h1 class="header__title">Download our App</h1>
                 </div>
                 <p class="header__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel<br> 
@@ -51,6 +54,10 @@
             </section>
     </header>
     
+    <!--           End of header           -->
+
+    <!--              Main                 -->
+
     <main>
         <section class="card-wrapper">
                 <div class="card-wrapper__header-container">
@@ -108,32 +115,58 @@
 
 
     </main>
+
+    <!--              End of Main                 -->
+
+    <!--                Footer                    -->
+
     <footer class="footer">
-            <form class="footer__form">
+        <section class="footer__wrapper">
+            <form class="footer__form" action="">
                 <h1 class="footer__form-header">Contact us</h1>
                 <h4 class="footer__form-header--small">We'd love to hear from you</h4>
                 <p class="footer__form__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
                     Suspendisse vel eleifend diam, tempus accumsan neque.</p>
-                <!-- <img src="images/pointer-icon.png" alt="pointer-icon"><h6>Vallgatan 25, Göteborg</h6>
-                <img src="images/telephone-icon.png" alt="telephone-icon"><h6>031 123 456 7</h6> 
-                <img src="images/mail-icon.png" alt="mail-icon"><h6>info@zocom.se</h6>-->
-                    <label class="" for="name">Namn</label>
-                <div>
+                    
+                <div class="footer__icon-wrapper">
+                    <img src="images/name-icon.png" alt="">
+                    <div class="footer__text-wrapper">
+                        <label class="" for="name">Name</label>   
+                        <input class="" type="text" placeholder="">
+                    </div>
+                </div>
+                   
+                <div class="footer__icon-wrapper">
+                <img src="images/pointer-icon.png" alt="pointer-icon">
+                <div class="footer__text-wrapper">
+                    <label class="footer__form--labels" for="Address">Adress</label>
                     <input class="" type="text" placeholder="">
                 </div>
-                    <label class="" for="Telefonnummer">Telefonnummer</label>
-                <div>
+                </div>
+
+                    
+                <div class="footer__icon-wrapper">
                     <img src="images/telephone-icon.png" alt="telephone-icon">
-                    <input class="" type="number" placeholder="">
+                    <div class="footer__text-wrapper">
+                        <label class="footer__form--labels" for="Telefonnummer">Telephone number</label>
+                        <input class="" type="number" placeholder="">
+                    </div>
                 </div>
                 
-                    <label class="" for="email">Mailaddress</label>
-                <div>
+                    
+                <div class="footer__icon-wrapper">
                     <img src="images/mail-icon.png" alt="mail-icon">
-                    <input class="" type="email" placeholder="">	
+                    <div class="footer__text-wrapper">
+                        <label class="footer__form--labels" for="email">E-mail</label>
+                        <input class="" type="email" placeholder="">
+                    </div>	
                 </div>
-                    <input class="footer__form__btn" type="submit" value="Skicka">
+                    <input class="footer__form__btn" type="submit" value="Send">
             </form>
+        </section>
     </footer>
+
+    <!--                End of footer                    -->
+
 </body>
 </html>
