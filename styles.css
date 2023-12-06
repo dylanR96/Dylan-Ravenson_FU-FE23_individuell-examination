@@ -284,10 +284,16 @@
 
 .footer__icon-wrapper {
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-start; 
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;    
+}
+
+.footer__textarea {
+    resize: none;
+    padding: 0.5rem;
+    font-family: 'Fira Sans';
 }
 
 .footer__form__btn {
